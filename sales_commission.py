@@ -25,9 +25,9 @@
     #print("Alert: Goal not reached. We need an action plan to recover sales.")
 
 # 1. Employee data (Feel free to change values for testing)
-employee_name = "Ana Costa"
+employee_name = input("Enter employee name: ")
 base_salary = 2500.00
-closed_deals = [5000.00, 12000.00, 3000.00, 2000.00] # Total sold: 22,000.00
+closed_deals = [float(x) for x in input("Enter closed deals amounts separated by commas: ").split(',')]
 
 # 2. Total sales calculation
 total_sales = sum(closed_deals)
